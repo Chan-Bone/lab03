@@ -128,7 +128,7 @@
 			<p>
 				<label for="date">Date</label> 
 				<input 
-					type="text" 
+					type="date" 
 					name= "date" 
 					id="date" 
 					placeholder="dd/mm/yyyy" 
@@ -136,10 +136,16 @@
 					size="10"
 					required="required"
 
-					pattern="\d{2}/\d{2}/\d{4}"
-					title="dd/mm/yyyy (day, numerical month, year), seperated with a slash (/)"
+					
 				>
 				<!-- 
+					pattern="\d{2}/\d{2}/\d{4}"
+					title="dd/mm/yyyy (day, numerical month, year), seperated with a slash (/)"
+					
+					pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]"
+					title="HH:MM (hour, minutes), seperated with a colon (:). Please enter time with a 24-hour format"
+
+
 					\d : Match any digit
 					{n} : Match n of the preceding item. (\d{2} means match 2 digits)
 					/ : Just match any literal slash (/) 
@@ -149,16 +155,13 @@
 			<p>
 				<label for="time">Time</label> 
 				<input 
-					type="text" 
+					type="time" 
 					name= "time" 
 					id="time" 
 					placeholder="00:00" 
 					maxlength="10" 
 					size="10"
 					required="required"
-
-					pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]"
-					title="HH:MM (hour, minutes), seperated with a colon (:). Please enter time with a 24-hour format"
 				>
 			</p>
 
